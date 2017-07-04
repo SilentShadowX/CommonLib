@@ -1,0 +1,4 @@
+include ':common'
+
+//include ':module'
+//project(':module').projectDir = new File('dir')

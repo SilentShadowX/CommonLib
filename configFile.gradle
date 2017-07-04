@@ -1,0 +1,130 @@
+ext.versions = [
+
+        //Kotlin
+        kotlinVersion                  : '1.1.3',
+
+        //Android
+        androidBuildToolsVersion        : '25.0.2',
+        androidMinSdkVersion            : 21,
+        androidTargetSdkVersion         : 25,
+        androidCompileSdkVersion        : 25,
+        gradleVersion                   : '3.0.0-alpha5',
+
+        //Support
+        supoportVersion                 : '25.2.0',
+        recyclerAnimationVersion        : '2.2.1',
+        circImageViewVersion            : '3.0.2',
+        expandableLayoutVersion         : '[2.5]',
+        constraintLayoutVersion         : '1.0.0-beta4',
+        floatinButtonVersion            : '1.9.0',
+
+        //Tools
+        spongyCastleVersion             : '1.54.0.0',
+        picassoVersion                  : '2.5.2',
+        eventBusVersion                 : '3.0.0',
+        estimoteVersion                 : '0.16.0',
+        guavaVersion                    : '20.0',
+        timberVersion                   : '3.1.0',
+        deepLinkVersion                 : '2.0.1',
+        tutorialShowcaseVersion         : '1.0.0',
+        easyPermVersion                 : '0.1.5',
+        hermesVersion                   : '0.2.0',
+        glideVersion                    : '3.7.0',
+        zbarVersion                     : '1.8.4',
+        lruVersion                      : '2.0.2',
+        zxingVersion                    : '3.2.1',
+        verticalViewPager               : '19.0.1',
+        circleImageViewHdodenhofVersion : '2.1.0',
+        toolTipVersion                  : '0.1.9',
+        simpleTooltipVersion            : '0.2.0',
+        easyDialogVersion               : '1.4',
+        fiqussLibVersion                : '1.0.13',
+
+        //Libraries
+        daggerVersion                   : '2.11',
+        butterKnifeVersion              : '8.4.0',
+        rxJavaVersion                   : '2.0.2',
+        rxAndroidVersion                : '2.0.1',
+        javaxAnnotationVersion          : '1.0',
+        javaxInjectVersion              : '1',
+        gsonVersion                     : '2.8',
+        okHttpVersion                   : '3.4.0',
+        androidAnnotationsVersion       : '21.0.3',
+
+        //Testing
+        jUnitVersion                    : '4.12',
+        mockitoVersion                  : '1.9.5',
+        dexmakerVersion                 : '1.0.1',
+        espressoVersion                 : '2.0',
+
+        //Development
+        leakCanaryVersion               : '1.3.1',
+
+        //Service
+        servicePlayVersion              : '11.0.2'
+]
+
+ext.gradlePlugins = [
+        gradle                          : "com.android.tools.build:gradle:$versions.gradleVersion",
+        kotlinGradle                    : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlinVersion"
+]
+
+ext.libs = [
+        kotlin                          : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlinVersion",
+        butterKnife                     : "com.jakewharton:butterknife:$versions.butterKnifeVersion",
+        animationsRecycler              : "jp.wasabeef:recyclerview-animators:$versions.recyclerAnimationVersion",
+        recyclerView                    : "com.android.support:recyclerview-v7:$versions.supoportVersion",
+        supportV4                       : "com.android.support:support-v4:$versions.supoportVersion",
+        appCompatV7                     : "com.android.support:appcompat-v7:$versions.supoportVersion",
+        cardview                        : "com.android.support:cardview-v7:$versions.supoportVersion",
+        design                          : "com.android.support:design:$versions.supoportVersion",
+        recyclerviewV7                  : "com.android.support:recyclerview-v7:$versions.supoportVersion",
+        percent                         : "com.android.support:percent:$versions.supoportVersion",
+        verticalViewPager               : "com.github.castorflex.verticalviewpager:library:$versions.verticalViewPager",
+        expandableLayout                : "net.cachapa.expandablelayout:expandablelayout:$versions.expandableLayoutVersion",
+        constraintLayout                : "com.android.support.constraint:constraint-layout:$versions.constraintLayoutVersion",
+        floatingButton                  : "net.i2p.android.ext:floatingactionbutton:$versions.floatinButtonVersion",
+        gson                            : "com.google.code.gson:gson:$versions.gsonVersion",
+        okHttp                          : "com.squareup.okhttp3:okhttp:$versions.okHttpVersion",
+        service                         : "com.google.android.gms:play-services:$versions.servicePlayVersion",
+        playServiceDrive                : "com.google.android.gms:play-services-drive:$versions.servicePlayVersion",
+        playServiceGCM                  : "com.google.android.gms:play-services-gcm:$versions.servicePlayVersion",
+        playServiceLocation             : "com.google.android.gms:play-services-location:$versions.servicePlayVersion",
+        playServiceVision               : "com.google.android.gms:play-services-vision:$versions.servicePlayVersion",
+        playServiceMaps                 : "com.google.android.gms:play-services-maps:$versions.servicePlayVersion",
+        daggerCompiler                  : "com.google.dagger:dagger-compiler:$versions.daggerVersion",
+        dagger                          : "com.google.dagger:dagger:$versions.daggerVersion",
+        rxJava                          : "io.reactivex.rxjava2:rxjava:$versions.rxJavaVersion",
+        rxAndroid                       : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroidVersion",
+        javaxAnnotation                 : "javax.annotation:jsr250-api:$versions.javaxAnnotationVersion",
+        guava                           : "com.google.guava:guava:$versions.guavaVersion",
+        dex                             : "com.android.support:multidex:$versions.dexmakerVersion",
+        spongyCastle                    : "com.madgag.spongycastle:core:$versions.spongyCastleVersion",
+        spongyCastlePg                  : "com.madgag.spongycastle:pg:$versions.spongyCastleVersion",
+        circularImageView               : "com.mikhaellopez:circularimageview:$versions.circImageViewVersion",
+        picasso                         : "com.squareup.picasso:picasso:$versions.picassoVersion",
+        eventBus                        : "org.greenrobot:eventbus:$versions.eventBusVersion",
+        beaconEstimote                  : "com.estimote:sdk:$versions.estimoteVersion",
+        timber                          : "com.jakewharton.timber:timber:$versions.timberVersion",
+        deepLink                        : "com.airbnb:deeplinkdispatch:$versions.deepLinkVersion",
+        tutShowCase                     : "com.github.florent37:tutoshowcase:$versions.tutorialShowcaseVersion",
+        easyPermission                  : "pub.devrel:easypermissions:$versions.easyPermVersion",
+        hermes                          : "xiaofei.library:hermes-eventbus:$versions.hermesVersion",
+        zbar                            : "me.dm7.barcodescanner:zbar:$versions.zbarVersion",
+        lru                             : "com.jakewharton:disklrucache:$versions.lruVersion",
+        zxing                           : "com.google.zxing:$versions.zxingVersion",
+        glide                           : "com.github.bumptech.glide:glide:$versions.glideVersion",
+        circleImageViewTwo              : "de.hdodenhof:circleimageview:$versions.circleImageViewHdodenhofVersion",
+        tooltip                         : "com.github.vihtarb:tooltip:$versions.toolTipVersion",
+        simpleTooltip                   : "com.github.douglasjunior:android-simple-tooltip:$versions.simpleTooltipVersion",
+        eastDialogVersion               : "com.github.michaelye.easydialog:easydialog:$versions.easyDialogVersion",
+        fiqussLib                       : "fiquss.sectionedrecycleradapter:app:$versions.fiqussLibVersion",
+        mockito                         : "org.mockito:mockito-core:$versions.mockitoVersion",
+        dexmaker                        : "com.google.dexmaker:dexmaker:$versions.dexmakerVersion",
+        dexmakerMockito                 : "com.google.dexmaker:dexmaker-mockito:$versions.dexmakerVersion",
+        espresso                        : "com.android.support.test.espresso:espresso-core:$versions.espressoVersion",
+        //testingSupportLib:            : "com.android.support.test:testing-support-lib:$versions.testingSupportLibVersion",
+        leakCanaryNoOp                  : "com.squareup.leakcanary:leakcanary-android-no-op:$versions.leakCanaryVersion",
+        leakCanary                      : "com.squareup.leakcanary:leakcanary-android:$versions.leakCanaryVersion"
+
+]
